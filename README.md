@@ -4,20 +4,20 @@ If you haven't noticed, ARM processors are everywhere. If you look around you, t
 
 To get started, I suggest you purchase a Raspberry Pi and start from there. I'm sorry but if you do not know what a Raspberry Pi is, then you got a long educational journey ahead of you, but don't get discouraged! Any Raspberry Pi will do, as long as you can either SSH into it or have some kind of terminal/command prompt to interact with. If you don't have a Raspberry Pi, then you can also emulate one with QEMU.
 
-Currently, at the time of writing this, I have a root shell on a home router that is manufactured by the company I work for, and it uses an ARM7L CPU. The only downside to using this, is that I have to install the Cross Compilation ARM utilities onto an Ubuntu VM, assemble and link the code in the VM, then SCP the binaries over to the router to execute them. I've included a small section below with some steps to get started using this method. Honestly, as long as you have some type of hardware that you have access to and can run privileged code, then you can use whatever you'd like. But I honestly recommend sticking with a Raspberry Pi.
+Currently, at the time of writing this, I have a root shell on a home router that is manufactured by the company I work for, and it uses an ARM7L CPU. The only downside to using this, is that I have to install the Cross Compilation ARM utilities onto an Ubuntu VM, assemble and link the code in the VM, then SCP the binaries over to the router to execute them. I've included a [small section below](#getting-started-with-a-different-hardware-platform) with some steps to get started using this method. Honestly, as long as you have some type of hardware that you have access to and can run privileged code, then you can use whatever you'd like. But I honestly and highly recommend sticking with a Raspberry Pi.
 
 ## Assembly Code Structure
-*Coming Soon...*
-
-## Getting Started with a Raspberry Pi
 *Coming Soon...*
 
 ## Writing Hello World
 *Coming Soon...*
 
+## Getting Started with a Raspberry Pi
+*Coming Soon...*
+
 ## Getting Started with a Different Hardware Platform.
 ### Install ARM dependencies.
-**NOTE: The libraries are platform dependent. Because I am using a home router, and it has an ARM7L CPU, then I'll be installing the specific architecture libraries listed below. I've also included the C/C++ libraries to help with the C/C++ to ARM disassembly.**
+**NOTE: The libraries are platform dependent. Because I am using a home router, and it has an ARM7L CPU, I'll be installing the specific architecture libraries listed below. I've also included the C/C++ libraries to help with the C/C++ to ARM disassembly. Remember, this is running from Ubuntu 16.04.6 LTS -> Rooted Home Router**
 
 First, install the GCC, G++ and utilities for the ARMEL Platform:
 ```bash

@@ -34,7 +34,7 @@ A link to a reference I used to help me get started can be found [here][1]. I do
 ### Linux Cross-Compilation to ARM.
 Taking the [helloworld.s](./asm/Hello-World/hello.s) code for example, the first thing we need to do is use the assembler to create the object file. Since we are coding this from an Intel-based Ubuntu VM, we will use a different assembler.
 ```bash
-user@ubuntu:~/asm arm-linux-gnueabi-as -o hello.o hello.s
+user@ubuntu:~/asm$ arm-linux-gnueabi-as -o hello.o hello.s
 ```
 
 We will then use the ARM linker to create the executable binary.
@@ -44,8 +44,10 @@ user@ubuntu:~/asm$ arm-linux-gnueabi-ld -o hello hello.o
 
 Then, we will SCP the executable over to the box and run it.
 ```bash
-scp hello root@192.168.1.1:/tmp
+user@ubuntu:~/asm$ scp hello root@192.168.1.1:/tmp
 ------
+user@ubuntu:~/asm$ ssh root@192.168.1.1
+...
 root@OpenWrt:~# cd /tmp
 root@OpenWrt:~# ./hello
 Hello World!

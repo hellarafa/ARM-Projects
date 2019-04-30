@@ -45,7 +45,6 @@ user@ubuntu:~/asm$ arm-linux-gnueabi-ld -o hello hello.o
 Then, we will SCP the executable over to the box and run it.
 ```bash
 user@ubuntu:~/asm$ scp hello root@192.168.1.1:/tmp
-------
 user@ubuntu:~/asm$ ssh root@192.168.1.1
 ...
 root@OpenWrt:~# cd /tmp

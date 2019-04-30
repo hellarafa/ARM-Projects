@@ -7,6 +7,8 @@ I suggest you use this program to learn how to code in Assembly. Writing code in
 
 Use the following links to help you get started with ARMSim#:
 
-[ARMSim manual from the University of Iowa](https://connex.csc.uvic.ca/access/content/group/ARMSim/SIMWeb/index.html)
-[Download Page from the University of Victoria](https://connex.csc.uvic.ca/access/content/group/ARMSim/SIMWeb/Downloads.html)
-[Version 2.1 - I Have not used this before.](https://webhome.cs.uvic.ca/~nigelh/ARMSim-V2.1/index.html)
+* [ARMSim manual from the University of Iowa](https://connex.csc.uvic.ca/access/content/group/ARMSim/SIMWeb/index.html)
+
+* [Download Page from the University of Victoria](https://connex.csc.uvic.ca/access/content/group/ARMSim/SIMWeb/Downloads.html)
+
+* [Version 2.1 - I Have not used this before.](https://webhome.cs.uvic.ca/~nigelh/ARMSim-V2.1/index.html)

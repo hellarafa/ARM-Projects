@@ -32,7 +32,7 @@ sudo apt-get install gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf binutils-ar
 A link to a reference I used to help me get started can be found [here][1]. I don't have an ACME board but the process is completely the same.
 
 ### Linux Cross-Compilation to ARM.
-Taking the helloworld.s code for example, [see here](./asm/Hello-World/hello.s), the first thing we need to do is use the assembler to create the object file. Since we are coding this from an Intel-based Ubuntu VM, we will use a different assembler.
+Taking the [helloworld.s](./asm/Hello-World/hello.s) code for example, the first thing we need to do is use the assembler to create the object file. Since we are coding this from an Intel-based Ubuntu VM, we will use a different assembler.
 ```bash
 arm-linux-gnueabi-as -o hello.o hello.s
 ```
@@ -49,7 +49,7 @@ scp hello root@192.168.1.1:/tmp
 root@OpenWrt:~# cd /tmp
 root@OpenWrt:~# ./hello
 Hello World!
-root@OpenWrt:~# 
+root@OpenWrt:~#
 ```
 
 # References

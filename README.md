@@ -17,7 +17,7 @@ Currently, at the time of writing this, I have a root shell on a home router tha
 
 ## Getting Started with a Different Hardware Platform.
 ### Install ARM dependencies.
-**NOTE: The libraries are platform dependent. Because I am using a home router, and it has an ARM7L CPU, I'll be installing the specific architecture libraries listed below. I've also included the C/C++ libraries to help with the C/C++ to ARM disassembly. Remember, this is running from Ubuntu 16.04.6 LTS -> Rooted Home Router**
+**NOTE: The libraries are platform dependent. Because I am using a home router, and it has an ARM7L CPU, I'll be installing the specific architecture libraries listed below. I've also included the C/C++ libraries to help with the C/C++ to ARM disassembly. Also, this is running from Ubuntu 16.04.6 LTS -> Rooted Home Router.**
 
 First, install the GCC, G++ and utilities for the ARMEL Platform:
 ```bash

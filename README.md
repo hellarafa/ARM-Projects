@@ -6,12 +6,18 @@ To get started, I suggest you purchase a Raspberry Pi and start from there. I'm 
 
 Currently, at the time of writing this, I have a root shell on a home router that is manufactured by the company I work for, and it uses an ARM7L CPU. The only downside to using this, is that I have to install the Cross Compilation ARM utilities onto an Ubuntu VM, assemble and link the code in the VM, then SCP the binaries over to the router to execute them. I've included a small section below with some steps to get started using this method. Honestly, as long as you have some type of hardware that you have access to and can run privileged code, then you can use whatever you'd like. But I honestly recommend sticking with a Raspberry Pi.
 
+## Assembly Code Structure
+*Coming Soon...*
+
 ## Getting Started with a Raspberry Pi
 *Coming Soon...*
 
+## Writing Hello World
+*Coming Soon...*
+
 ## Getting Started with a Different Hardware Platform.
-### Linux Cross-Compilation to ARM.
-**NOTE: The libraries are platform dependant. Because I am using a home router, and it has an ARM7L CPU, then I'll be installing the specific architecture libraries listed below. I've also included the C/C++ libraries to help with the C/C++ to ARM disassembly.**
+### Install ARM dependencies.
+**NOTE: The libraries are platform dependent. Because I am using a home router, and it has an ARM7L CPU, then I'll be installing the specific architecture libraries listed below. I've also included the C/C++ libraries to help with the C/C++ to ARM disassembly.**
 
 First, install the GCC, G++ and utilities for the ARMEL Platform:
 ```bash
@@ -24,6 +30,27 @@ sudo apt-get install gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf binutils-ar
 ```
 
 A link to a reference I used to help me get started can be found [here][1]. I don't have an ACME board but the process is completely the same.
+
+### Linux Cross-Compilation to ARM.
+Taking the helloworld.s code for example, [see here](./asm/Hello-World/hello.s), the first thing we need to do is use the assembler to create the object file. Since we are coding this from an Intel-based Ubuntu VM, we will use a different assembler.
+```bash
+arm-linux-gnueabi-as -o hello.o hello.s
+```
+
+We will then use the ARM linker to create the executable binary.
+```bash
+arm-linux-gnueabi-ld -o hello hello.o
+```
+
+Then, we will SCP the executable over to the box and run it.
+```bash
+scp hello root@192.168.1.1:/tmp
+------
+root@OpenWrt:~# cd /tmp
+root@OpenWrt:~# ./hello
+Hello World!
+root@OpenWrt:~# 
+```
 
 # References
 * [Azeria Labs: Intro to ARM Assembly Basics](https://azeria-labs.com/writing-arm-assembly-part-1/)

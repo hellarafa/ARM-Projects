@@ -5,7 +5,7 @@ While I was studying at Cal State Northridge, I used this program to learn ARM a
 
 I suggest you use this program to learn how to code in Assembly. Writing code in this program vs. writing code for a real ARM CPU is slightly different as you will be using different System Calls than those found in the program. Structure is the most important thing here, as learning __how__ assembly works and __how__ to _"think"_ in assembly are the most important concepts you must master in order to code successfully in assembly.
 
-In this repo, I've included the same tutorial PDF I used to get started as well as the .zip archive with the program.
+In this repo, I've included the same [tutorial PDF](./ARM-Tutorial.pdf) I used to get started as well as the [.zip archive](./ARMSimInstaller191.zip) with the program.
 
 Use the following links to help you get started with ARMSim#:
 

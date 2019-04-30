@@ -11,13 +11,17 @@ Currently, at the time of writing this, I have a root shell on a home router tha
 
 ## Getting Started with a Different Hardware Platform.
 ### Linux Cross-Compilation to ARM.
-**NOTE: The libraries are platform dependant. Because I am using a home router, and it has an ARM7L CPU, then I'll be installing the specific architecture libraries listed below. I've also included the C/C++ libraries to help with the C/C++ to ARM disassembly**
+**NOTE: The libraries are platform dependant. Because I am using a home router, and it has an ARM7L CPU, then I'll be installing the specific architecture libraries listed below. I've also included the C/C++ libraries to help with the C/C++ to ARM disassembly.**
 
 First, install the GCC, G++ and utilities for the ARMEL Platform:
-`sudo apt-get install g++-arm-linux-gnueabi gcc-arm-linux-gnueabi binutils-arm-linux-gnueabi libncurses5-dev libc6-armel-cross`
+```bash
+sudo apt-get install g++-arm-linux-gnueabi gcc-arm-linux-gnueabi binutils-arm-linux-gnueabi libncurses5-dev libc6-armel-cross
+```
 
-If you have the ARMHF Platform:
-`sudo apt-get install gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf binutils-arm-linux-gnueabihf libncurses5-dev libc6-armhf-cross`
+_IF_ you have the ARMHF Platform:
+```bash
+sudo apt-get install gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf binutils-arm-linux-gnueabihf libncurses5-dev libc6-armhf-cross
+```
 
 A link to a reference I used to help me get started can be found [here][1]. I don't have an ACME board but the process is completely the same.
 

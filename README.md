@@ -34,12 +34,12 @@ A link to a reference I used to help me get started can be found [here][1]. I do
 ### Linux Cross-Compilation to ARM.
 Taking the [helloworld.s](./asm/Hello-World/hello.s) code for example, the first thing we need to do is use the assembler to create the object file. Since we are coding this from an Intel-based Ubuntu VM, we will use a different assembler.
 ```bash
-arm-linux-gnueabi-as -o hello.o hello.s
+user@ubuntu:~/asm arm-linux-gnueabi-as -o hello.o hello.s
 ```
 
 We will then use the ARM linker to create the executable binary.
 ```bash
-arm-linux-gnueabi-ld -o hello hello.o
+user@ubuntu:~/asm$ arm-linux-gnueabi-ld -o hello hello.o
 ```
 
 Then, we will SCP the executable over to the box and run it.
@@ -53,12 +53,12 @@ root@OpenWrt:~#
 ```
 
 # References
+* [Davespace: Introduction to ARM](http://www.davespace.co.uk/arm/introduction-to-arm/)
 * [Azeria Labs: Intro to ARM Assembly Basics](https://azeria-labs.com/writing-arm-assembly-part-1/)
 * [Thinkingeek: ARM Assembly with the Raspberry Pi](https://thinkingeek.com/2013/01/09/arm-assembler-raspberry-pi-chapter-1/)
 * [Microdigital: ARM Assembly with the Raspberry Pi](http://www.microdigitaled.com/ARM/ASM_ARM/Software/ARM_Assembly_Programming_Using_Raspberry_Pi_GUI.pdf)
 * [Smith.edu: ARM Assembly with the Raspberry Pi](http://www.science.smith.edu/dftwiki/index.php/Tutorial:_Assembly_Language_with_the_Raspberry_Pi#Assemble.2C_Compile.2C_and_Run.21)
 * [Coranac: Whirlwind Tour of ARM](https://www.coranac.com/tonc/text/asm.htm)
 * [RaspberryPi: Learning ARM Assembly](https://www.raspberrypi.org/forums/viewtopic.php?t=22820)
-* [Davespace: Introduction to ARM](http://www.davespace.co.uk/arm/introduction-to-arm/)
 
 [1]: https://www.acmesystems.it/arm9_toolchain

@@ -16,6 +16,8 @@ First, install the GCC, G++ and utilities: `sudo apt-get install g++-arm-linux-g
 
 If you have the ARMEL Platform: `sudo apt-get install gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf binutils-arm-linux-gnueabihf libncurses5-dev libc6-armhf-cross`
 
+A link to a reference I used to help me get started can be found [here][1]. I don't have an ACME board but the process is completely the same.
+
 # References
 * [Azeria Labs: Intro to ARM Assembly Basics](https://azeria-labs.com/writing-arm-assembly-part-1/)
 * [Thinkingeek: ARM Assembly with the Raspberry Pi](https://thinkingeek.com/2013/01/09/arm-assembler-raspberry-pi-chapter-1/)
